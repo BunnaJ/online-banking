@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import { FaUserCheck } from "react-icons/fa6";
 import { BsSendCheckFill } from "react-icons/bs";
 import { GrMoney } from "react-icons/gr";
 import { GiReceiveMoney } from "react-icons/gi";

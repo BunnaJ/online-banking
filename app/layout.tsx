@@ -5,10 +5,7 @@ import LayoutWrapper from "../components/featuresComponent/wayHouse/LayoutWrappe
 
 // Fonts setup (same as you already did)
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
-const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 const interFont = Inter({ variable: "--font-inter", subsets: ["latin"] });
-const outfitFont = Outfit({ variable: "--font-outfit", subsets: ["latin"] });
-const ovoFont = Ovo({ variable: "--font-ovo", subsets: ["latin"], weight: ["400"] });
 
 export const metadata: Metadata = {
   title: "HuloFinance",

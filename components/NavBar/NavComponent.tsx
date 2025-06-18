@@ -3,7 +3,6 @@
 import React from "react";
 import Link from "next/link";
 import NavLinks from "./NavLinks";
-import Image from "next/image";
 import Logo from "../Logo";
 import {
   NavigationMenu,

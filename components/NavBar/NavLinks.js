@@ -1,5 +1,4 @@
 import {
-  Bank,
   Building2,
   User2,
   HelpCircle,
@@ -18,7 +17,6 @@ import {
 const NavLinks = [
   {
     title: "Banks",
-    icon: Bank,
     children: [
       { title: "Personal", href: "/personal", icon: User2 },
       { title: "Corporate", href: "/corporate", icon: Building2 },

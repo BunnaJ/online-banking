@@ -14,14 +14,13 @@ const ATMCard = () => {
       }
     };
 
-    const cleanup = autoFlip();
     window.addEventListener("resize", autoFlip);
     return () => window.removeEventListener("resize", autoFlip);
   }, []);
 
   const cardStyle = {
     backgroundColor: "#a3bdff",
-    backgroundImage: `url('https://www.transparenttextures.com/patterns/diagmonds-light.png')`, // Replace with your own image
+    backgroundImage: `url('https://www.transparenttextures.com/patterns/diagmonds-light.png')`, 
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     backgroundBlendMode: "overlay",
@@ -160,5 +159,4 @@ const ATMCard = () => {
 
 export default ATMCard;
 
-// #142d6f -second blue
-// #142d6f -main
+

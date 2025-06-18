@@ -12,22 +12,26 @@ const awards = [
   {
     icon: <FaAward size={30} className="text-yellow-400" />,
     title: "Best Digital Bank 2024",
-    description: "Recognized for excellence in digital banking innovation and customer experience.",
+    description:
+      "Recognized for excellence in digital banking innovation and customer experience.",
   },
   {
     icon: <FaTrophy size={30} className="text-orange-400" />,
     title: "Top Fintech Startup",
-    description: "Awarded for outstanding growth, service reliability, and financial technology.",
+    description:
+      "Awarded for outstanding growth, service reliability, and financial technology.",
   },
   {
     icon: <FaMedal size={30} className="text-green-400" />,
     title: "Customer Choice Award",
-    description: "Voted most trusted online banking solution by over 300,000 customers.",
+    description:
+      "Voted most trusted online banking solution by over 300,000 customers.",
   },
   {
     icon: <FaStar size={30} className="text-blue-400" />,
     title: "UX Design Excellence",
-    description: "Praised for intuitive interface and seamless banking experience.",
+    description:
+      "Praised for intuitive interface and seamless banking experience.",
   },
 ];
 
@@ -57,20 +61,19 @@ export default function ThirdSection() {
   return (
     <div className="container mx-auto px-4 py-2 md:py-32 ">
       <div className="flex items-center justify-between  bg-[url('/bg3.jpg')] bg-cover bg-repeat ">
-        <div className="">
-          <div className="">
+        <div>
+          <div>
             <div className="font-bold text-3xl">Our Work Process</div>
             <div className=" text-[var(--or)] text-lg ">
-              We’re proud to grow with you — every step of the way.
+              {"We're"} proud to grow with you — every step of the way.
             </div>
           </div>
-          <div className="">
+          <div>
             <div className="flex items-center gap-7 mt-14 border-l-2  pl-5 ">
-              <div className="">
+              <div>
                 <PiBankFill size={70} className="text-[var(--main)]" />
               </div>
-              {/*  */}
-              <div className="">
+              <div>
                 <div className="font-bold text-2xl">Banking Services</div>
                 <div className="w-[500px] text-lg text-[var(--or)] ">
                   HuloFinance offers a powerful suite of financial solutions
@@ -81,44 +84,40 @@ export default function ThirdSection() {
             </div>
 
             <div className="flex items-center gap-7 mt-14 border-l-2  pl-5 ">
-              <div className="">
-                <GiTakeMyMoney
-                  size={70}
-                  className="text-[var(--main)]"
-                />
+              <div>
+                <GiTakeMyMoney size={70} className="text-[var(--main)]" />
               </div>
-              {/*  */}
-              <div className="">
+              <div>
                 <div className="font-bold text-2xl">
                   Cash Management Account
                 </div>
                 <div className="w-[500px] text-lg text-[var(--or)] ">
                   Enjoy the flexibility of a daily spending account with the
-                  earning potential of a term deposit. With HuloFinance’s Cash
+                  earning potential of a term deposit. With HuloFinance{"'"}s Cash
                   Management Account, you get the best of both worlds —
                   convenience and interest.
                 </div>
               </div>
             </div>
+
             <div className="flex items-center gap-7 mt-14 border-l-2  pl-5 ">
-              <div className="">
+              <div>
                 <BsFillPersonVcardFill size={70} className="text-[var(--main)]" />
               </div>
-              {/*  */}
-              <div className="">
+              <div>
                 <div className="font-bold text-2xl">
                   Business Transaction Accounts
                 </div>
                 <div className="w-[500px] text-lg text-[var(--or)] ">
                   Our business accounts are smart, secure, and built to support
-                  your operations. Whether you're a startup or an enterprise,
+                  your operations. Whether {"you're"} a startup or an enterprise,
                   our team is here to guide you to the right choice.
                 </div>
               </div>
             </div>
-          
           </div>
         </div>
+
         <div className="relative w-[600px]">
           <Image
             src={"/huloPhone.png"}
@@ -142,11 +141,11 @@ export default function ThirdSection() {
           </motion.div>
         </div>
       </div>
-        {/*  */}
+
       <div className="container mx-auto px-4 text-center mt-24">
         <h2 className="text-3xl font-bold mb-4 text-[var(--main)]">Awards & Recognitions</h2>
         <p className="text-gray-600 mb-10">
-          At HuloFinance, we're proud of the trust we've earned and the milestones we've achieved.
+          At HuloFinance, {"we're"} proud of the trust {"we've"} earned and the milestones {"we've"} achieved.
         </p>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           {awards.map((award, idx) => (
