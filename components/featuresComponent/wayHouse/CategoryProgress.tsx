@@ -27,7 +27,7 @@ const data: { name: CategoryName; percentage: number }[] = [
 export default function CategoryProgress() {
   return (
 <div className="">
-    <h1 className='font-bold pt-12 pb-10 text-xl '>Top Categories</h1>
+    <h1 className='font-bold pt-12 pb-10 text-l '>Top Categories</h1>
 <div className="space-y-6">
       {data.map((cat, index) => (
         <div key={index} className="space-y-1">

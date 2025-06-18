@@ -48,7 +48,7 @@ export default function SideNav() {
                 }`}
               />
               <span
-                className={`font-bold text-xl ${
+                className={`font-bold text-l ${
                   isActive ? "text-white" : "text-black"
                 }`}
               >

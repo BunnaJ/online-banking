@@ -35,13 +35,13 @@ export default function RequestLoan() {
     <div className="">
       <div className="w-full max-w-4xl bg-white  space-y-8">
         <div>
-          <h2 className="text-3xl font-bold text-[var(--main)]">Loan Request</h2>
-          <p className="text-gray-700 text-xl pt-2">Kindly fill in the details below to request a loan.</p>
+          <h2 className="text-2xl font-bold text-[var(--main)]">Loan Request</h2>
+          <p className="text-l text-gray-700 font-bold pt-2">Kindly fill in the details below to request a loan.</p>
         </div>
 
         {message && (
           <div
-            className={`p-3 rounded-md text-xl ${
+            className={`p-3 rounded-md text-l ${
               message.type === "success"
                 ? "bg-green-100 text-green-700"
                 : "bg-red-100 text-red-600"
@@ -53,7 +53,7 @@ export default function RequestLoan() {
 
         <div className="space-y-6">
           <div>
-            <label className="text-gray-700 text-xl">Loan Amount (₦)</label>
+            <label className="text-gray-700 text-l">Loan Amount (₦)</label>
             <input
               type="number"
               value={amount}
@@ -64,7 +64,7 @@ export default function RequestLoan() {
           </div>
 
           <div>
-            <label className="text-gray-700 text-xl">Purpose of Loan</label>
+            <label className="text-gray-700 text-l">Purpose of Loan</label>
             <input
               type="text"
               value={purpose}
@@ -75,7 +75,7 @@ export default function RequestLoan() {
           </div>
 
           <div>
-            <label className="text-gray-700 text-xl">Duration (in months)</label>
+            <label className="text-gray-700 text-l">Duration (in months)</label>
             <input
               type="number"
               value={duration}
@@ -86,7 +86,7 @@ export default function RequestLoan() {
           </div>
 
           <div>
-            <label className="text-gray-700 text-xl">Repayment Start Date</label>
+            <label className="text-gray-700 text-l">Repayment Start Date</label>
             <input
               type="date"
               value={repaymentDate}
@@ -101,7 +101,7 @@ export default function RequestLoan() {
           disabled={isLoading}
           className="w-full bg-[var(--main)] text-white py-3 rounded-md font-semibold hover:bg-opacity-90 transition disabled:opacity-50 flex items-center justify-center"
         >
-          {isLoading ? <Loader2 className="animate-spin w-5 h-5" /> : "Submit Loan Request"}
+          {isLoading ? <Loader2 className="animate-spin w-5 h-5 text-sm" /> : "Submit Loan Request"}
         </button>
       </div>
     </div>

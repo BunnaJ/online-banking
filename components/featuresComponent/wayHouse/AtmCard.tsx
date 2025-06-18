@@ -28,7 +28,7 @@ const ATMCard = () => {
 
   return (
     <div
-      className="w-[500px] h-[300px]  mt-10"
+      className="w-3500px] h-[270px]  mt-10"
       style={{ perspective: "1000px" }}
       onMouseEnter={() => window.innerWidth >= 768 && setIsFlipped(true)}
       onMouseLeave={() => window.innerWidth >= 768 && setIsFlipped(false)}
@@ -49,8 +49,8 @@ const ATMCard = () => {
           }}
         >
           <div className="">
-            <p className="font-bold text-xl text-[var(--main)]">Kelvin Peter</p>
-            <p className="font-bold text-xl pt-2">$250.31</p>
+            <p className="font-bold text-l text-[var(--main)]">Kelvin Peter</p>
+            <p className="font-bold text-l pt-2">$250.31</p>
           </div>
           {/* 2 */}
           <div className="flex items-center justify-between pt-8">
@@ -111,7 +111,7 @@ const ATMCard = () => {
               fontFamily: `'Courier New', Courier, monospace`,
               letterSpacing: "0.1em",
             }}
-            className="text-2xl font-bold pt-6 text-[var(--main)]"
+            className="text-xl font-bold pt-6 text-[var(--main)]"
           >
             5095 6923 2******
           </div>

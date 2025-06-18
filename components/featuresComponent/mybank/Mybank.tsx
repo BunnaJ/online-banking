@@ -10,12 +10,12 @@ export default function Mybank() {
       {/* 1 */}
       <div className="">
         <div className="flex items-center gap-3">
-          <h1 className="text-4xl font-bold font-outfit">My Bank</h1>
-          <span className="text-4xl font-bold  text-[var(--main)]">
+          <h1 className="text-2xl font-bold font-outfit">My Bank</h1>
+          <span className="text-2xl font-bold  text-[var(--main)]">
             Accounts
           </span>
         </div>
-        <h3 className="text-xl text-[var(--or)]  font-bold pt-2 ">
+        <h3 className="text-l text-[var(--or)]  font-bold pt-2 ">
           Effortlessly Manage your Bank Activities
         </h3>
       </div>
@@ -58,13 +58,13 @@ export default function Mybank() {
 
       {/* copy account info */}
      <div className="pt-10">
-     <h1 className="text-2xl font-bold pt-3 pb-5">your Account Details </h1>
+     <h1 className="text-xl font-bold pt-3 pb-5">your Account Details </h1>
         <CopyAccount/>
      </div>
 
       {/* card */}
-     <div className="pt-14">
-        <h1 className="text-2xl font-bold">your Card</h1>
+     <div className="pt-14 w-[500px]">
+        <h1 className="text-xl font-bold">your Card</h1>
      <ATMCard/>
      </div>
 

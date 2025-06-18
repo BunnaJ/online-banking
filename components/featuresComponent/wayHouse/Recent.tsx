@@ -5,15 +5,15 @@ import AccountOverview from "./AccountOverView";
 
 export default function Recent() {
   return (
-    <div className="pt-14">
-      <div className="pb-16 flex">
+    <div className="">
+      <div className=" ">
         {/* spending chart */}
-        <SpendingChart />
         <AccountOverview/>
+        <SpendingChart />
       </div>
       <div className="flex items-center justify-between">
-        <h1 className="font-bold text-2xl">Recent transactions</h1>
-        <div className="border w-[100px] p-2 border-[var(--main)] rounded cursor-pointer text-center hover:bg-indigo-50 ">
+        <h1 className="font-bold text-xl">Recent transactions</h1>
+        <div className="border w-[100px] p-2 text-sm border-[var(--main)] rounded cursor-pointer text-center hover:bg-indigo-50 ">
           View All
         </div>
       </div>

@@ -44,7 +44,7 @@ export default function UserProfile() {
 
         {/* Info */}
         <div className="flex-1 space-y-6">
-          <h2 className="text-3xl font-bold text-gray-800">User Profile</h2>
+          <h2 className="text-2xl font-bold text-gray-800">User Profile</h2>
 
           {/* Name */}
           <div>

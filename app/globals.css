@@ -2,11 +2,11 @@
 @import "tw-animate-css";
 
 
-body{
+/* body{
  width:!100vw;
  overflow: hidden
  
-}
+} */
 
 @custom-variant dark (&:is(.dark *));
 * {

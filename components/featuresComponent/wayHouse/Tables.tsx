@@ -78,21 +78,21 @@ export default function Recent() {
         <table className="min-w-full table-auto text-left ">
           <thead>
             <tr className="text-sm text-gray-600 border-b">
-              <th className="px-4 py-2 font-medium text-xl bg-[var(--soft)]">Transaction</th>
-              <th className="px-4 py-2 font-medium text-xl bg-[var(--soft)]">Amount</th>
-              <th className="px-4 py-2 font-medium text-xl bg-[var(--soft)]">Status</th>
-              <th className="px-4 py-2 font-medium text-xl bg-[var(--soft)]">Date</th>
-              <th className="px-4 py-2 font-medium text-xl bg-[var(--soft)]">Category</th>
+              <th className="px-4 py-2 font-medium text-l bg-[var(--soft)]">Transaction</th>
+              <th className="px-4 py-2 font-medium text-l bg-[var(--soft)]">Amount</th>
+              <th className="px-4 py-2 font-medium text-l bg-[var(--soft)]">Status</th>
+              <th className="px-4 py-2 font-medium text-l bg-[var(--soft)]">Date</th>
+              <th className="px-4 py-2 font-medium text-l bg-[var(--soft)]">Category</th>
             </tr>
           </thead>
           <tbody className="text-sm border-b ">
             {currentData.map((txn) => (
               <tr key={txn.id} className="transition border-b ">
-                <td className="px-4 py-5 bg-[#fdfdfd] text-[16px]">{txn.title}</td>
-                <td className={`px-4 py-5 bg-[#fdfdfd] text-[16px] ${txn.amount > 0 ? "text-green-600" : "text-red-500"}`}>
-                  {txn.amount > 0 ? "+" : "-"}₦{Math.abs(txn.amount).toLocaleString()}
+                <td className="px-4 py-5 bg-[#fdfdfd] text-[14px]">{txn.title}</td>
+                <td className={`px-4 py-5 bg-[#fdfdfd] text-[14px] ${txn.amount > 0 ? "text-green-600" : "text-red-500"}`}>
+                  {txn.amount > 0 ? "+" : "-"}${Math.abs(txn.amount).toLocaleString()}
                 </td>
-                <td className="px-4 py-5 bg-[#fdfdfd] text-[16px]">
+                <td className="px-4 py-5 bg-[#fdfdfd] text-[14px]">
                   <span className={`px-3 py-2 rounded-3xl text-xs  ${
                     txn.status === "Success"
                       ? "bg-green-100 text-green-700"
@@ -103,8 +103,8 @@ export default function Recent() {
                     {txn.status}
                   </span>
                 </td>
-                <td className="px-4 py-5 bg-[#fdfdfd] text-[16px]">{txn.date}</td>
-                <td className="px-4 py-5 bg-[#fdfdfd] text-[16px]">{txn.category}</td>
+                <td className="px-4 py-5 bg-[#fdfdfd] text-[14px]">{txn.date}</td>
+                <td className="px-4 py-5 bg-[#fdfdfd] text-[14px]">{txn.category}</td>
               </tr>
             ))}
           </tbody>

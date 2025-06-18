@@ -7,13 +7,13 @@ import { Bell } from "lucide-react";
 export default function Homes() {
   return (
     <div className="">
-      <div className="flex gap-5  ">
-        <div className="w-[1200px]">
+      <div className="flex gap-5  justify-between">
+        <div className="w-[800px]">
           <div className="border-b-2 pl-14 pb-5">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-3">
-                <h1 className="text-4xl font-bold font-outfit">Welcome</h1>
-                <span className="text-4xl font-bold  text-[var(--main)]">
+                <h1 className="text-3xl font-bold font-outfit">Welcome</h1>
+                <span className="text-3xl font-bold  text-[var(--main)]">
                   Kelvin
                 </span>
               </div>
@@ -30,12 +30,12 @@ export default function Homes() {
                 <CircleChart />
               </div>
               <div className="pt-10 space-y-4">
-                <div className="font-bold text-2xl">1 Bank Accounts</div>
+                <div className="font-bold text-xl">1 Bank Accounts</div>
                 <div className="">
-                  <p className="text-[var(--or)] text-xl pb-1.5">
+                  <p className="text-[var(--or)] text-l pb-1.5">
                     Total Current Balance
                   </p>
-                  <p className="font-bold text-4xl">$250.31</p>
+                  <p className="font-bold text-2xl">$250.31</p>
                 </div>
               </div>
             </div>

@@ -53,8 +53,8 @@ export default function TransferFunds() {
     <div className="">
       <div className="w-full max-w-5xl bg-white rounded-xl space-y-12">
         <div>
-          <h2 className="md:text-4xl font-bold text-[var(--main)]">Transfer Funds</h2>
-          <p className="text-xl text-gray-700 font-bold pt-2">
+          <h2 className="md:text-2xl font-bold text-[var(--main)]">Transfer Funds</h2>
+          <p className="text-l text-gray-700 font-bold pt-2">
             Please provide any specific details related to the payment transfer.
           </p>
         </div>
@@ -72,13 +72,13 @@ export default function TransferFunds() {
         )}
 
         <div>
-          <label className="text-xl text-gray-700">Transfer Type</label>
+          <label className="text-l text-gray-700">Transfer Type</label>
           <div className="flex gap-4 mt-2">
             {["Local", "International"].map((type) => (
               <button
                 key={type}
                 onClick={() => setTransferType(type)}
-                className={`px-4 py-2 rounded-full border ${
+                className={`px-4 py-2 rounded-full border text-sm ${
                   transferType === type
                     ? "bg-[var(--main)] text-white border-transparent"
                     : "border-gray-300 text-gray-700"
@@ -110,7 +110,7 @@ export default function TransferFunds() {
 
         <div className="space-y-4">
           <div>
-            <label className="text-xl text-gray-700">Recipient Account Number</label>
+            <label className="text-l text-gray-700">Recipient Account Number</label>
             <input
               type="text"
               value={accountNumber}
@@ -121,7 +121,7 @@ export default function TransferFunds() {
           </div>
 
           <div>
-            <label className="text-xl text-gray-700">Recipient Account Name</label>
+            <label className="text-l text-gray-700">Recipient Account Name</label>
             <input
               type="text"
               value={accountName}
@@ -132,7 +132,7 @@ export default function TransferFunds() {
           </div>
 
           <div>
-            <label className="text-xl text-gray-700">Amount (₦)</label>
+            <label className="text-l text-gray-700">Amount (₦)</label>
             <input
               type="number"
               value={amount}
@@ -143,7 +143,7 @@ export default function TransferFunds() {
           </div>
 
           <div>
-            <label className="text-xl text-gray-700">Narration (Optional)</label>
+            <label className="text-l text-gray-700">Narration (Optional)</label>
             <textarea
               value={narration}
               onChange={(e) => setNarration(e.target.value)}

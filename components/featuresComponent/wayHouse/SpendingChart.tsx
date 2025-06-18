@@ -22,8 +22,8 @@ const monthlySpending = [
 
 export default function YearlySpendingChart() {
   return (
-    <div className="w-full h-[300px] bg-white p-4 rounded-xl">
-      <h2 className="text-xl font-semibold text-[var(--main)] mb-4">Monthly Spending (₦)</h2>
+    <div className="w-full h-[300px] bg-white p-4 rounded-xl mt-6">
+      <h2 className="text-l font-semibold text-[var(--main)] mb-4">Monthly Spending (₦)</h2>
       <ResponsiveContainer width="100%" height="100%">
         <BarChart data={monthlySpending}>
           <CartesianGrid strokeDasharray="3 3" />
