@@ -30,8 +30,8 @@ export default function UserProfile() {
   };
 
   return (
-    <div className="w-full">
-      <div className="max-w-4xl bg-white shadow-md rounded-xl p-6 md:p-10 space-y-6 md:flex md:items-start md:gap-10">
+    <div className="md:w-full">
+      <div className="md:max-w-4xl bg-white rounded-xl p-6 md:p-10 space-y-6 md:flex md:items-start md:gap-10">
         {/* Avatar */}
         <div className="flex-shrink-0 text-center md:text-left">
           <img
@@ -44,7 +44,7 @@ export default function UserProfile() {
 
         {/* Info */}
         <div className="flex-1 space-y-6">
-          <h2 className="text-2xl font-bold text-gray-800">User Profile</h2>
+          <h2 className="md:text-2xl text-lg font-bold text-gray-800">User Profile</h2>
 
           {/* Name */}
           <div>

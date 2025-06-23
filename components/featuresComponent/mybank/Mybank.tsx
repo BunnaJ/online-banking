@@ -21,7 +21,7 @@ export default function Mybank() {
       </div>
 
       {/* 2 */}
-      <div className=" flex items-center gap-10 pt-10">
+      <div className=" md:flex items-center gap-10 pt-10 space-y-6">
         {/* Account Balance */}
         <div className="flex items-center gap-4 p-4 bg-white rounded-xl shadow transition hover:shadow-md w-[300px]">
           <div className="p-3 rounded-full bg-[var(--soft)]">

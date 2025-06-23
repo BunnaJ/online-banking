@@ -6,8 +6,8 @@ import CategoryProgress from "../featuresComponent/wayHouse/CategoryProgress";
 
 export default function SideRight() {
   return (
-    <div className=" border-r border-l w-[500px]  px-10">
-      <div className="relative h-[200px]  bg-gradient-to-r from-[#142d6f] to-[#a3bdff]">
+    <div className=" border-r border-l  px-10">
+      <div className="relative h-[200px]  bg-gradient-to-r from-[#142d6f] to-[#a3bdff] hidden md:block">
         <div className="flex  items-center justify-center -bottom-10 left-16 border-4 absolute text-5xl font-bold rounded-full bg-[#142d6f] text-white w-[100px] h-[100px]">
           <h2 className="text-[var(--secondColor)]">K</h2>
         </div>

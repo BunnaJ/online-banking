@@ -51,7 +51,7 @@ export default function TransferFunds() {
 
   return (
     <div className="">
-      <div className="w-full max-w-5xl bg-white rounded-xl space-y-12">
+      <div className="md:w-full md:max-w-5xl bg-white rounded-xl space-y-12">
         <div>
           <h2 className="md:text-2xl font-bold text-[var(--main)]">Transfer Funds</h2>
           <p className="text-l text-gray-700 font-bold pt-2">

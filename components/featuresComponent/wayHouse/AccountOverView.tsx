@@ -4,12 +4,12 @@ import { ArrowDownCircle, ArrowUpCircle, Wallet } from "lucide-react";
 
 export default function AccountOverview() {
   return (
-    <div className="bg-gradient-to-r from-[var(--soft)] to-white p-6 rounded-2xl shadow-sm ">
+    <div className="bg-gradient-to-r from-[var(--soft)] to-white p-6 rounded-2xl shadow-sm w-[500px] md:w-full">
       <h2 className="text-l font-semibold text-[var(--main)] mb-6">Account Overview</h2>
 
-      <div className="flex items-center justify-center gap-4">
+      <div className="md:flex items-center justify-center gap-4 space-y-4">
         {/* Account Balance */}
-        <div className="flex items-center gap-4 p-4 bg-white rounded-xl shadow transition hover:shadow-md w-[200px]">
+        <div className="flex items-center gap-4 p-4 bg-white rounded-xl shadow transition hover:shadow-md  md:w-[200px]">
           <div className="p-3 rounded-full bg-[var(--soft)]">
             <Wallet className="text-[var(--main)] w-6 h-6" />
           </div>
@@ -20,7 +20,7 @@ export default function AccountOverview() {
         </div>
 
         {/* Total Income */}
-        <div className="flex items-center gap-4 p-4 bg-white rounded-xl shadow transition hover:shadow-md w-[200px]">
+        <div className="flex items-center gap-4 p-4 bg-white rounded-xl shadow transition hover:shadow-md md:w-[200px]">
           <div className="p-3 rounded-full bg-green-100">
             <ArrowDownCircle className="text-green-600 w-6 h-6" />
           </div>
@@ -31,7 +31,7 @@ export default function AccountOverview() {
         </div>
 
         {/* Total Expenses */}
-        <div className="flex items-center gap-4 p-4 bg-white rounded-xl shadow transition hover:shadow-md w-[200px]">
+        <div className="flex items-center gap-4 p-4 bg-white rounded-xl shadow transition hover:shadow-md md:w-[200px]">
           <div className="p-3 rounded-full bg-red-100">
             <ArrowUpCircle className="text-red-500 w-6 h-6" />
           </div>

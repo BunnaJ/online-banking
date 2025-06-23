@@ -111,7 +111,8 @@ export default function Recent() {
         </table>
 
         {/* Pagination */}
-        <div className="flex justify-end items-center mt-4 space-x-2 pt-10 ">
+       <div className="hidden md:block">
+       <div className="flex justify-end items-center mt-4 space-x-2 pt-10 ">
           <button
             onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
             disabled={currentPage === 1}
@@ -130,6 +131,7 @@ export default function Recent() {
             Next
           </button>
         </div>
+       </div>
       </div>
     </div>
   );
